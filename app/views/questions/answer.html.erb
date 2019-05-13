@@ -1,10 +1,4 @@
 <h1>Questions#answer</h1>
-<% if (params[:question] == "I am going to work") %>
-<%= "Great!"  %>
-<% elsif (params[:question] == "?") %>
-<%= "Silly question, get dressed and go to work!" %>
-<% else %>
-<%= "I don't care, get dressed and go to work!" %>
-<% end %>
+<%= @answer %>
 <br>
 <%= link_to "Ask a question", ask_path  %>
